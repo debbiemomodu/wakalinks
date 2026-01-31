@@ -60,13 +60,13 @@ function Navbar() {
             
             <li><a href="#destinations" className="block py-2 hover:text-sky-500">Destinations</a></li>
             <li><a href="#about" className="block py-2 hover:text-sky-500">About Us</a></li>
-            <li><a href="#contact" className="block py-2 hover:text-sky-500">Contact</a></li>
+            <li><a href="#testimonials" className="block py-2 hover:text-sky-500">Testimonials</a></li>
             <li>
               <a
-                href="#book"
+                href="#contact"
                 className="block bg-sky-400 text-white px-4 py-2 rounded-lg text-center hover:bg-sky-500 transition"
               >
-                Book Now
+                Contact Us  
               </a>
             </li>
           </ul>
