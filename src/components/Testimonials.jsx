@@ -1,7 +1,7 @@
 function Testimonials() {
   const reviews = [
     {
-      feedback: "Wakalinks Travels made my study abroad process seamless. From visa guidance to university admission, everything was handled professionally!",
+      feedback: "Wakalink Travels made my study abroad process seamless. From visa guidance to university admission, everything was handled professionally!",
       name: "Amina O.",
       rating: 5,
     },
@@ -11,7 +11,7 @@ function Testimonials() {
       rating: 5,
     },
     {
-      feedback: "I never thought international travel could be this stress-free. Wakalinks team took care of everything from start to finish.",
+      feedback: "I never thought international travel could be this stress-free. Wakalink team took care of everything from start to finish.",
       name: "Chinwe M.",
       rating: 5,
     },

@@ -13,7 +13,7 @@ function AboutUs() {
             Who We Are
           </h3>
           <p className="text-gray-700 text-lg md:text-xl">
-            Wakalinks Travels is dedicated to making your travel dreams a reality. 
+            Wakalink Travels is dedicated to making your travel dreams a reality. 
             From visa processing to study abroad guidance and exciting vacation packages, 
             we handle every step with professionalism, care, and expertise.
           </p>

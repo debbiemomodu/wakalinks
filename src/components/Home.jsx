@@ -14,7 +14,7 @@ function Home() {
 
         {/* Headline */}
         <h5 className="text-4xl md:text-5xl font-bold text-sky-400 pt-6 italic">
-          Welcome to Wakalinks Travels
+          Welcome to Wakalink Travels
         </h5>
 
         {/* Subtext */}

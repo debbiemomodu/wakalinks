@@ -10,7 +10,7 @@ function Footer() {
           <p className="mb-2">
             <img
               src={instagram}
-              alt="Instagram Wakalinks Travels"
+              alt="Instagram Wakalink Travels"
               className="w-10 h-10 inline-block mr-2 rounded-full object-cover"
             />
             <a
@@ -19,7 +19,7 @@ function Footer() {
               rel="noopener noreferrer"
               className="hover:text-sky-400 transition"
             >
-              @wakalinkstravels
+              @wakalink_travels
             </a>
           </p>
         </div>
@@ -41,10 +41,10 @@ function Footer() {
           <p className="mb-2">
             ✉️{" "}
             <a
-              href="mailto:wakalinkstravels@gmail.com"
+              href="mailto:wakalinktravels@gmail.com"
               className="hover:text-sky-400 transition"
             >
-              wakalinkstravels@gmail.com
+              wakalinktravels@gmail.com
             </a>
           </p>
 
@@ -72,7 +72,7 @@ function Footer() {
       </div>
 
       <div className="text-center text-gray-500 mt-12 text-sm">
-        © {new Date().getFullYear()} Wakalinks Travels. All rights reserved.
+        © {new Date().getFullYear()} Wakalink Travels. All rights reserved.
       </div>
     </footer>
   );

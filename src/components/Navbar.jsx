@@ -25,7 +25,7 @@ function Navbar() {
         
         {/* Logo */}
         <div className="flex items-center">
-          <img src={logo} alt="Wakalinks Travels" className="h-15 w-auto" />
+          <img src={logo} alt="Wakalink Travels" className="h-15 w-auto" />
         </div>
 
         {/* Desktop Menu */}
