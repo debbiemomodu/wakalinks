@@ -3,6 +3,21 @@ import logo from "../assets/images/logo.jpeg";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState("#home"); // Track active menu link
+
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+    setMenuOpen(false); // Close mobile menu after clicking
+  };
+
+  const menuItems = [
+    { name: "Home", href: "#home" },
+    { name: "Services", href: "#services" },
+    { name: "Destinations", href: "#destinations" },
+    { name: "About Us", href: "#about" },
+    { name: "Testimonials", href: "#testimonials" },
+    { name: "Contact Us", href: "#contact", special: true },
+  ];
 
   return (
     <nav className="w-full bg-white shadow-md fixed top-0 z-50">
@@ -15,60 +30,59 @@ function Navbar() {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 items-center font-medium text-gray-700">
-          <li>
-            <a href="#home" className="hover:text-sky-500 transition">Home</a>
-          </li>
-          <li>
-            <a href="#services" className="hover:text-sky-500 transition">Services</a>
-          </li>
-         
-          <li>
-            <a href="#destinations" className="hover:text-sky-500 transition">Destinations</a>
-          </li>
-          <li>
-            <a href="#about" className="hover:text-sky-500 transition">About Us</a>
-          </li>
-          <li>
-            <a href="#testimonials" className="hover:text-sky-500 transition">Testimonials</a>
-          </li>
-          <li>
-            <a
-              href="#contact"
-              className="bg-sky-400 text-white px-4 py-2 rounded-lg hover:bg-sky-500 transition"
-            >
-              Contact Us
-            </a>
-          </li>
+          {menuItems.map((item) => (
+            <li key={item.href}>
+              <a
+                href={item.href}
+                onClick={() => handleLinkClick(item.href)}
+                className={`transition ${
+                  activeLink === item.href
+                    ? item.special
+                      ? "bg-sky-400 text-white px-4 py-2 rounded-lg"
+                      : "text-sky-500"
+                    : item.special
+                    ? "bg-sky-400 text-white px-4 py-2 rounded-lg hover:bg-sky-500"
+                    : "hover:text-sky-500"
+                }`}
+              >
+                {item.name}
+              </a>
+            </li>
+          ))}
         </ul>
 
         {/* Mobile Menu Button */}
-       <button
-        className="md:hidden text-3xl font-bold focus:outline-none"
-        onClick={() => setMenuOpen(!menuOpen)}
+        <button
+          className="md:hidden text-3xl font-bold focus:outline-none"
+          onClick={() => setMenuOpen(!menuOpen)}
         >
-        ☰
+          {menuOpen ? "✕" : "☰"} {/* Toggle icon */}
         </button>
-
       </div>
-
+        
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-white shadow-md">
           <ul className="flex flex-col gap-2 px-6 py-4 text-gray-700">
-            <li><a href="#home" className="block py-2 hover:text-sky-500">Home</a></li>
-            <li><a href="#services" className="block py-2 hover:text-sky-500">Services</a></li>
-            
-            <li><a href="#destinations" className="block py-2 hover:text-sky-500">Destinations</a></li>
-            <li><a href="#about" className="block py-2 hover:text-sky-500">About Us</a></li>
-            <li><a href="#testimonials" className="block py-2 hover:text-sky-500">Testimonials</a></li>
-            <li>
-              <a
-                href="#contact"
-                className="block bg-sky-400 text-white px-4 py-2 rounded-lg text-center hover:bg-sky-500 transition"
-              >
-                Contact Us  
-              </a>
-            </li>
+            {menuItems.map((item) => (
+              <li key={item.href}>
+                <a
+                  href={item.href}
+                  onClick={() => handleLinkClick(item.href)}
+                  className={`block py-2 text-center transition ${
+                    activeLink === item.href
+                      ? item.special
+                        ? "bg-sky-400 text-white rounded-lg"
+                        : "text-sky-500"
+                      : item.special
+                      ? "bg-sky-400 text-white rounded-lg hover:bg-sky-500"
+                      : "hover:text-sky-500"
+                  }`}
+                >
+                  {item.name}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       )}
