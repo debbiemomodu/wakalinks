@@ -2,7 +2,7 @@
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Services from "./components/Services";
-import AboutUs from "./components/Aboutus";
+import AboutUs from "./components/AboutUs";
 import Destinations from "./components/Destinations";
 import Footer from "./components/ContactUs";
 
