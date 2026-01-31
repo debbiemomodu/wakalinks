@@ -61,7 +61,7 @@ function Footer() {
           </p>
 
           <a
-            href="https://wa.me/2348063690700"
+            href="https://wa.me/+2347076847203"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-sky-400 text-white px-6 py-3 rounded-lg font-semibold hover:bg-sky-500 transition"
