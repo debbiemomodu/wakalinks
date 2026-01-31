@@ -1,10 +1,23 @@
+import plane from "../assets/images/plane.jpg";
 function Home() {
   return (
     <section id="home" className="min-h-screen flex flex-col bg-sky-50 pt-20 px-4">
       <div className="text-center max-w-3xl mx-auto">
-        <h5 className="text-4xl md:text-5xl font-bold text-sky-400 pt-12 italic">
+        {/* Hero Image */}
+                     <img
+  src={plane}
+  alt="Travel illustration"
+  className="w-full h-auto max-h-24 sm:max-h-32 md:max-h-40 lg:max-h-48 rounded-xl shadow-lg mb-8 object-cover"
+/>
+
+
+
+        {/* Headline */}
+        <h5 className="text-4xl md:text-5xl font-bold text-sky-400 pt-6 italic">
           Welcome to Wakalinks Travels
         </h5>
+
+        {/* Subtext */}
         <p className="mt-4 text-lg md:text-xl text-gray-700 mb-6">
           Explore the world with us — seamless visa processing, exciting vacation packages, and study abroad guidance all in one place.
         </p>

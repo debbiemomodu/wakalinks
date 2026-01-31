@@ -29,14 +29,14 @@ function Navbar() {
             <a href="#about" className="hover:text-sky-500 transition">About Us</a>
           </li>
           <li>
-            <a href="#contact" className="hover:text-sky-500 transition">Contact</a>
+            <a href="#testimonials" className="hover:text-sky-500 transition">Testimonials</a>
           </li>
           <li>
             <a
               href="#contact"
               className="bg-sky-400 text-white px-4 py-2 rounded-lg hover:bg-sky-500 transition"
             >
-              Book Now
+              Contact Us
             </a>
           </li>
         </ul>

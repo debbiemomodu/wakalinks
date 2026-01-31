@@ -1,3 +1,4 @@
+import instagram from "../assets/images/instagram.jpg";  
 function Footer() {
   return (
     <footer id="contact" className="bg-sky-50 py-16 px-4 sm:px-6 lg:px-20">
@@ -5,13 +6,21 @@ function Footer() {
 
         {/* Brand */}
         <div>
-          <a href="#home">
-            <h3 className="text-2xl font-bold mb-4 text-sky-400 hover:text-sky-500 transition">
-              Wakalinks Travels
-            </h3>
-          </a>
-          <p>
-            Making your travel dreams a reality.
+          <h4 className="text-xl font-semibold mb-4 text-sky-400">Follow Us</h4>
+          <p className="mb-2">
+            <img
+              src={instagram}
+              alt="Instagram Wakalinks Travels"
+              className="w-10 h-10 inline-block mr-2 rounded-full object-cover"
+            />
+            <a
+              href="https://www.instagram.com/wakalink_travels?igsh=MTV3bW0wYjYxZzIyMA=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-sky-400 transition"
+            >
+              @wakalinkstravels
+            </a>
           </p>
         </div>
 
@@ -22,17 +31,17 @@ function Footer() {
           <p className="mb-2">
             📞{" "}
             <a
-              href="tel:+2348012345678"
+              href="tel:+2347076847203"
               className="hover:text-sky-400 transition"
             >
-              +234 806 369 0700
+              +234 707 684 7203
             </a>
           </p>
 
           <p className="mb-2">
             ✉️{" "}
             <a
-              href="mailto:waklinkstravels@gmail.com"
+              href="mailto:wakalinkstravels@gmail.com"
               className="hover:text-sky-400 transition"
             >
               wakalinkstravels@gmail.com
