@@ -6,7 +6,7 @@ function Home() {
         {/* Hero Image */}
                      <img
   src={plane}
-  alt="Travel illustration"
+  alt="Travel illustration"  loading="lazy"
   className="w-full h-auto max-h-24 sm:max-h-32 md:max-h-40 lg:max-h-48 rounded-xl shadow-lg mb-8 object-cover"
 />
 

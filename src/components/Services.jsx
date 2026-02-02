@@ -14,7 +14,7 @@ function Services() {
         <div className="md:w-1/2 w-full">
   <img
     src={visa}
-    alt="Visa Processing"
+    alt="Visa Processing"  loading='lazy'
     className="rounded-lg shadow-md w-full max-h-85 object-cover"
   />
 </div>
@@ -45,7 +45,7 @@ function Services() {
         <div className="md:w-1/2">
           <img
             src={study}
-            alt="Study Abroad"
+            alt="Study Abroad" loading='lazy'
             className="rounded-lg shadow-md w-full h-auto"
           />
         </div>
@@ -75,7 +75,7 @@ function Services() {
         <div className="md:w-1/2">
           <img
             src={vacation}
-            alt="Vacation Packages"
+            alt="Vacation Packages" loading='lazy'
             className="rounded-lg shadow-md w-full h-auto"
           />
         </div>

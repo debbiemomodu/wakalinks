@@ -11,7 +11,7 @@ function Footer() {
             <img
               src={instagram}
               alt="Instagram Wakalink Travels"
-              className="w-10 h-10 inline-block mr-2 rounded-full object-cover"
+              className="w-10 h-10 inline-block mr-2 rounded-full object-cover" loading="lazy"
             />
             <a
               href="https://www.instagram.com/wakalink_travels?igsh=MTV3bW0wYjYxZzIyMA=="
