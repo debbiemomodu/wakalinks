@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../assets/images/logo.jpeg";
+import logo from "../assets/images/logo.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,11 +21,11 @@ function Navbar() {
 
   return (
     <nav className="w-full bg-white shadow-md fixed top-0 z-50">
-      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6  flex items-center justify-between">
         
         {/* Logo */}
         <div className="flex items-center">
-          <img src={logo} alt="Wakalink Travels" loading="lazy" className="h-15 w-auto" />
+          <img src={logo} alt="Wakalink Travels" loading="lazy" className="h-18  w-auto" />
         </div>
 
         {/* Desktop Menu */}
